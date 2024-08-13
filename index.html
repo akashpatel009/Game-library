@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Library</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #efedeb;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #0fcec477 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #2aaf967e 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(media/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="banner">
+        <div class="slider" style="--quantity: 11">
+
+            <div class="item" style="--position: 1"><img src="media/1.jpg" alt="dragon1" ></div>
+
+            <div class="item" style="--position: 2" ><img src="media/2.png" alt="dragon2" s></div>
+
+            <div class="item" style="--position: 3" ><img src="media/3.jpg" alt="dragon3" ></div>
+
+            <div class="item" style="--position: 4"><img src="media/4.jpg" alt="dragon4" ></div>
+
+            <div class="item" style="--position: 5"><img src="media/5.jpg" alt="dragon5" ></div>
+
+            <div class="item" style="--position: 6"><img src="media/6.jpg" alt="dragon6" ></div>
+
+            <div class="item" style="--position: 7"><img src="media/7.jpg" alt="dragon7" ></div>
+
+            <div class="item" style="--position: 8"><img src="media/8.jpg" alt="dragon8" ></div>
+
+            <div class="item" style="--position: 9"><img src="media/9.jpg" alt="dragon 9" ></div>
+
+            <div class="item" style="--position: 10"><img src="media/10.jpg" alt="dragon 10" ></div>
+            
+            <div class="item" style="--position: 11"><img src="media/OIP.jpg" alt="dragon 11" ></div>
+        </div>
+        <div class="content">
+            <h1 data-content="Games Library">Games Library</h1>
+            <div class="auther">
+                <h2>Akash patel</h2>
+                <p><b>Web Design</b></p>
+                <p>Library is for stream game </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+</body>
+</html>
